@@ -32,7 +32,6 @@ XXX in ControlSetXXX is a three digit number usually ControlSet001, ControlSet00
 BootExecute = <file path>
 The default value of BootExecute is autocheck autochk * Winlogon key
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon
-
 Notify Key- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify
 Explorer.exe- HKEY_LOCAL_MACHINE\SOFTWARE\MicrosoftWindows NT\CurrentVersion\Winlogon\Shell
 
@@ -40,6 +39,7 @@ Explorer.exe- HKEY_LOCAL_MACHINE\SOFTWARE\MicrosoftWindows NT\CurrentVersion\Win
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell
+
 
 ☸Start background services- 
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce
@@ -53,6 +53,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_
 ☸File Association Keys-
 HKEY_LOCAL_MACHINE\Software\Classes
 HKEY_CLASSES_ROOT
+File associations HKEY_CLASSES_ROOT or in HKEY_LOCAL_MACHINE\SOFTWARE\Classes\[File type or extension name]\shell\open\command
+The entry in the (Default) registry value executes files that are described by [File type or extension name].
   
 ☸Policy scripts keys
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Group Policy\Scripts\Shutdown\0\N 
